@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/admin.css">
+    <title>Miracle - Quản lý người dùng</title>
+</head>
+<body>
+    <div class="containerAll">
+        <div class="Top-head">
+            <div class="logo">
+                <img src="../img/logo_01.png">
+            </div>
+            <div class="account">
+
+               <img src="../img/user-regular.svg">
+               <span>admin_01</span>
+               <button>Đăng xuất</button>
+
+            </div>
+        </div>
+        <div class="Section">
+            <div class="Options">
+                <div class="manager_user " style="background-image: linear-gradient(to right bottom , #da1e3788, #dddf00);" id="manage">
+                    <a href="../code/admin_managerUsers.html">
+                        Quản lý người dùng
+                    </a>
+                </div>
+                <div class="manager_order" id="manage">
+                    <a href="../code/admin_managerOrder.html">
+                        Quản lý đơn hàng
+                    </a>
+                </div>
+                <div class="manager_products" id="manage">
+                    <a href="../code/admin_managerProducts.html">
+                        Quản lý hàng hóa
+                    </a>
+                </div>
+                <div class="crossToMain">
+                    <a href="../code/main.html">
+                       Vào giao diện người dùng
+                    </a>
+                </div>
+            
+    
+            </div>
+            <div class="contentSection">
+                <div class="title">
+                    Quản lý người dùng
+                </div>
+                <div class="content">
+                    <table id="listUser">
+                        <thead>
+                            <th style=" flex: 2;">Họ tên</th>
+                            <th style="flex: 10%;">Email</th>
+                            <th style="flex: 10%;">Số điện thoại</th>
+                            <th style="flex: 10%;">Mã OTP</th>
+                            <th style="flex: 10%;">Tên đăng nhập</th>
+                            <th style="flex: 10%;">Mật khẩu</th>
+                            <th style="flex: 10%;">Thao tác</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <input type="text" value="Lê Quốc" disabled> </td>
+                                <td> <input type="text" name="" id="" value="lequoc@gmail.com" disabled> </td>
+                                <td><input type="text" name="" id="" value="0789105234" disabled></td>
+                                <td> <input type="text" name="" id="" value="778934" disabled> </td>
+                                <td> <input type="text" name="" id="" value="lequoc" disabled></td>
+                                <td > <input type="password" name="" id="" value="lequoc" disabled> </td>
+                                <td> <button id="change-info">Chỉnh sửa</button>
+                                    <button id="delete-info">Xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="btnSave"><button>Lưu</button></div>
+
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <script src="../code/admin.js"></script>
+    
+</body>
+</html>

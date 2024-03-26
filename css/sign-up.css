@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+.formLogin {
+    background-color:  #fff;
+    position: fixed;
+    top: 0;
+
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    
+    
+}
+.container__form {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.081);
+}
+.formLogin--content {
+    flex: 70%;
+    padding: 10px;
+}
+.btnBack {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: -75px;
+    left: 770px;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+
+}
+.btn_size {
+    font-size: 20px;
+}
+.loginInput-confirmPw {
+
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+.loginInput-confirmPw >input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+    line-height: 50px;
+}
+.loginInput-phone {
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.loginInput-phone >input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+    line-height: 50px;
+}
+.loginInput-name {
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+.loginInput-name >input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+    line-height: 50px;
+}
+.loginInput-password {
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+.loginInput-password >input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+    line-height: 50px;
+}
+#placeholder {
+    font-size: 30px;
+}
+.buttonNext > button{
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom , #da1e3788, #dddf00);
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    border: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.buttonNext > p {
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #6c757d52;
+}
+.loginOther {
+    margin-top: 10px;
+    border-radius: 10px;
+
+    
+}
+.loginOther >li {
+    margin-top: 10px;
+    text-align: center;
+    
+
+}
+#text-02 {
+
+    font-size: 12px;
+}
+#text__loginOther {
+    color: #6c757d81;
+    
+    position: relative;
+    top: -20px;
+    background-color: #fff;
+    width: 100px;
+    left: 165px;
+
+   
+}
+.loginOther >img {
+
+    border-radius: 10px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+    left: 165px;
+}
+
+
+.formLogin--image {
+    border-radius: 10px;
+    background-color: #e2effe;
+
+}
+
+.formLogin--image > img{
+    border-radius: 10px;
+    flex: 30%;
+    max-height: 400px;
+    
+}

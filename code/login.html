@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/login.css">
+    <title>Đăng nhập</title>
+   
+</head>
+<body>
+    <div class="containerForm">
+        <div class="contentForm">
+            <div class="titleForm">
+                <H1>Xin chào!</H1>
+                <p>Vui lòng đăng nhập tại đây!</p>
+            </div>
+            <form class="loginForm" action="">
+                <div class="formElement">
+                    <input id="username" type="text" name="username" maxlength="10" placeholder="Tên đăng nhập"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                <div class="formElement">
+                    <input id="password" type="password" name="password" placeholder="Mật khẩu"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                
+                <button class="btn_next" onblur="" onclick="Redirect()">Đăng nhập</button> <br>
+                
+            </form>
+            <div class="option">
+                <a href="../code/changePassword.html" >Quên mật khẩu?</a>
+                <a class="signUp" href="../code/sign-up.html">Đăng ký</a>
+               
+            </div>
+            <div class="loginOther">
+                <li id="text__loginOther">Hoặc tiếp tục</li>
+                <img src="../img/fb_logo.png" >
+                <img src="../img/gg_logo.png">
+    
+                <li id="text-rules">Bằng việc tiếp bạn đã đồng ý với các điều khoản của chúng tôi</li>
+    
+            </div>
+        </div>
+        <div class="formLogin--image">
+            <img src="../img/banner_02.jpg">
+        </div>
+    </div>
+    <script src="../code/login.js"></script>
+    <script>
+        Validator ({
+            crosspage: '"login.html"',
+            form: '.loginForm',
+            formParents: '.formElement',
+            errorSelect: '.messError',
+            rules: [
+                Validator.isRequired('#username', 'Vui lòng nhập tên đăng nhập'),
+                Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+                
+            ],
+            submit: function(data){
+                console.log(data)
+            }
+        });
+        var x = document.querySelector("#username")
+        
+ if (x.focus === false) {
+    console.log(x.value)
+ }
+    </script>
+</body>
+</html>

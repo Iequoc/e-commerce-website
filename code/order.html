@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn hàng</title>
+    <link rel="stylesheet" href="../code/managerAcc.css">
+</head>
+<body>
+    <div class="containerBody">
+        <div class="Options">
+            <div>
+                <div class="Avatar">
+                    <img src="../img/demo_avt.jpg">
+                    <div class="AccountName">
+                        <span>Lê Quốc</span>
+            
+                    </div>
+                </div>
+                <div class="Other">
+                    <li>Ưu đãi mới nhất ngày 15/5</li>
+                    <li>Siêu sale 45%</li>
+                    <li> <a href="../code/managerAcc.html" style="color: black;"> Hồ sơ của bạn</a></li>
+                    <li> <a href="../code/order.html" style="color: black;"> Đơn hàng</a></li>
+                    <li>Thông báo</li>
+                    <li>Voucher</li>
+                    <li><a href="../code/main.html  ">Quay lại trang chủ</a></li>
+    
+                </div>
+            </div>
+            
+            
+            
+    
+        </div>
+        <div></div>
+        <div class="inforPersonal">
+            <div class="Title">
+                <H1>Đơn hàng bạn đã đặt</H1>
+                <p>Bạn có thể xem thông tin chi tiết đơn hàng tại đây</p>
+    
+            </div>
+            
+            <div class="Information">
+                <table id="orderTable">
+                    <thead >
+                        <th style="flex: 10%; text-align: center;">STT</th>
+                        <th style=" display: flex; justify-content: center;">Tên sản phẩm</th>
+                        <th style="flex: 10%;text-align: center;">Hình ảnh</th>
+                        <th style="flex: 10%;text-align: center;">Đơn giá</th>
+                        <th style="flex: 10%; text-align: center;">Số lượng</th>
+                        <th style="flex: 10%; text-align: center; ">Thành tiền</th>
+                        <th style="flex: 10%; text-align: center;">Trạng thái</th>
+                        <th style="flex: 10%; text-align: center;">Thao tác</th>
+                    </thead>
+                    <tbody id="orderItem">
+                            
+                    </tbody>
+
+                </table>
+                <div class="total">
+                    <p> Tổng số tiền bạn cần thanh toán là: </p> <span style="color: red;">0</span> <sup style="color: red;">đ</sup>
+
+                </div>
+               
+                
+                
+    
+    
+            </div>
+    
+        </div>
+        
+    </div>
+    <script src="../code/product.js"></script>
+    <script>Order();  totalPayOrder ()</script>
+    
+    
+</body>
+</html>

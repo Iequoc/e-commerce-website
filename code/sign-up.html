@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../code/login.css">
+    <title>Đăng ký tài khoản</title>
+   
+</head>
+<body>
+    <div class="containerForm">
+        <div class="contentForm">
+            <div class="titleForm">
+                <H1>Đăng ký tài khoản</H1>
+                <p>Vui lòng điền thông tin tại đây!</p>
+            </div>
+            <form class="loginForm" action="">
+                
+                <div class="formElement">
+                    <input id="phone" type="number" name="phone" maxlength="10" placeholder="Số điện thoại"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                <div class="formElement">
+                    <input id="username" type="text" name="username" placeholder="Tên đăng nhập"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                <div class="formElement">
+                    <input id="password" type="password" name="password" placeholder="Mật khẩu"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                <div class="formElement">
+                    <input id="comfirmPassword" type="password" name="comfirmPassword" placeholder="Xác nhận lại mật khẩu"> <br>
+                    <span class="messError" style="color: red;"></span>
+                </div>
+                
+                <button class="btn_next">Đăng ký ngay</button> <br>
+               
+            </form>
+            
+        </div>
+        <div class="formLogin--image">
+            <img src="../img/banner_02.jpg">
+        </div>
+    </div>
+    <script src="../code/login.js"></script>
+    <script>
+        Validator ({
+            form: '.loginForm',
+            formParents: '.formElement',
+            errorSelect: '.messError',
+            rules: [
+                Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại'),
+                Validator.isRequired('#username', 'Vui lòng nhập tên đăng nhập'),
+                Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+                Validator.isRequired('#comfirmPassword', 'Vui lòng nhập mật khẩu'),
+                Validator.isConfirmed('#comfirmPassword', function(){
+                    return document.querySelector('.loginForm #password').value;
+                    console.log(document.querySelector('.loginForm #password').value)
+                }, 'Vui lòng nhập chính xác mật khẩu'),
+            ],
+            submit: function(data){
+                console.log(data)
+            }
+        });
+    </script>
+</body>
+</html>

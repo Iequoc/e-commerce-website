@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+/* Css cho trang chung */
+.containerAll {
+    width: 1200px;
+    height: 700px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Top-head {
+    background-image: linear-gradient(to right bottom , #da1e3788, #dddf00);
+    flex: 10;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50%;
+}
+.logo > img{
+    height: 50px;
+
+}
+.account {
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account > img {
+    margin-right: 5px;
+    max-height: 20px;
+}
+.account > button {
+    padding: 5px;
+    font-weight: 550;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-left: 10px;
+    color: red;
+}
+.Section {
+    display: flex;
+    flex: 10;
+}
+.Options {
+    flex: 2;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+#manage {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#manage:hover {
+    background-color: rgba(0, 255, 255, 0.389);
+}
+
+.contentSection {
+    flex: 8;
+}
+.title {
+    color: #fff;
+    background-image: linear-gradient(to right bottom , #da1e3788, #dddf00);
+    margin-top: 20px;
+    height: 30px;
+    padding: 10px;
+    font-size: 25px;
+}
+.content {
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: auto;
+    width: fit-content;
+    margin-right: 10px;
+}
+#listUser{
+    width: 100%;
+}
+#listUser > thead {
+    background-color: #adb5bd;
+    height: 40px;
+}
+#listUser > thead > th {
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#listUser > tbody  {
+    width: 100px;
+
+}
+#change-info {
+    margin-right: 10px;
+}
+#listUser > tbody > tr {
+    text-align: center;
+    
+}
+#listUser > tbody > tr > td > button > img {
+    width: 50px;
+    height: 50px;
+}
+#listUser > tbody > tr > td > input {
+    background-color: #adb5bd70;
+    padding: 5px 0;
+    height: 80px;
+}
+#listUser > tbody > tr > td > button {
+    padding: 5px;
+    background-color: #fff;
+}
+.btnSave {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+.btnSave > button {
+    padding: 10px 15px;
+    font-weight: 700;
+    background-color: #faa307;
+}
+.crossToMain {
+    padding-left: 10px;
+}
+.crossToMain > a:hover {
+    color: red;
+}
+.statusProducts {
+    text-align: start;
+    font-size: 14px;
+    padding: 5px;
+
+}
+.statusProducts > div {
+    margin-left: 5px;
+}
+.statusProducts > div > span {
+    margin-left: 3px;
+}

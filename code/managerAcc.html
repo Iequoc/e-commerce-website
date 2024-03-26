@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tài khoản</title>
+    <link rel="stylesheet" href="../code/managerAcc.css">
+</head>
+<body>
+    <div class="containerBody">
+        <div class="Options">
+            <div>
+                <div class="const_Avt">
+                    <div class="Avatar">
+                        <img src="../img/demo_avt.jpg">
+                        
+                    </div>
+                    <div class="AccountName">
+                        <span>Tên của bạn</span>
+            
+                    </div>
+                </div>
+               
+                <div class="Other">
+                    <li>Ưu đãi mới nhất ngày 15/5</li>
+                    <li>Siêu sale 45%</li>
+                    <li> <a href="../code/managerAcc.html" style="color: black;"> Hồ sơ của bạn</a></li>
+                    <li> <a href="../code/order.html" style="color: black;"> Đơn hàng</a></li>
+                    <li>Thông báo</li>
+                    <li>Voucher</li>
+                    <li><a href="../code/main.html  ">Quay lại trang chủ</a></li>
+    
+                </div>
+            </div>
+            
+            
+            
+    
+        </div>
+        <div></div>
+        <div class="inforPersonal">
+            <div class="Title">
+                <H1>Hồ sơ cá nhận của bạn</H1>
+                <p>Bạn có thể chỉnh sửa hồ sơ của mình ở đây</p>
+    
+            </div>
+            
+            <div class="Information">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td class="infor--text">
+                                <label for="">Tên đăng nhập</label>
+                            </td>
+                            <td class="infor--input">
+                                <input id="username" type="text" name= "username" value="lequoc">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="infor--text">
+                                <label for="">Tên</label>
+                            </td>
+                            <td class="infor--input">
+                                <input id="name" type="text" name="name">
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="infor--text">
+                                <label for="">Email</label>
+                            </td>
+                            <td class="infor--input">
+                                <input id="email" type="text" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="infor--text">
+                                <label for="">Giới tính</label>
+                            </td>
+                            <td class="infor--input">
+                                <input id="sex" type="radio" name="sex">
+                                <span>Nam</span>
+                                <input id="sex" type="radio" name="sex">
+                                <span>Nữ</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="infor--text">
+                                <label for="">Ngày sinh</label>
+                            </td>
+                            <td class="infor--input ">
+                                <input id="birth" type="date" name="birth">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="button">
+                                <button class="btn_save">Lưu</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+    
+        </div>
+        <div class="changeAvatar">
+            <div class="avatarPic">
+                <img src="../img/demo_avt.jpg" >
+
+            </div>
+            <div class="saveAvt">
+                <input id="inputImage" type="file">
+                <button>Chọn ảnh</button>
+            </div>
+            <div class="rulesAvt">
+                <p>Ảnh xấu không cho tải lên</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="../code/acc.js"></script>
+    
+    
+</body>
+</html>
